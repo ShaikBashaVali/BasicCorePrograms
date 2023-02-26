@@ -25,7 +25,8 @@ namespace BasicCorePrograms
                                   "7.Swap2Numbers" + "\n" +
                                   "8.EvenorOdd" + "\n" +
                                   "9.VowelOrConsonant" + "\n" +
-                                  "10.Exit" + "\n");
+                                  "10.LargestNumber" + "\n" +
+                                  "11.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -68,9 +69,12 @@ namespace BasicCorePrograms
                         vowelOrConsonant.VowelConsonant();
                         break;
                     case 10:
+                        LargestNumber largestNumber = new LargestNumber();
+                        largestNumber.LargeNumber();
+                        break;
+                    case 11:
                         flag = false;
                         break;
-
                 }
             }
         }
