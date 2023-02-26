@@ -11,13 +11,14 @@ namespace BasicCorePrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Basic Core Programs");
+            Console.WriteLine("---------Basic Core Programs---------");
             bool flag = true;
             while (flag)
             {
                 Console.WriteLine("Select the option");
                 Console.WriteLine("1.FlipCoin" + "\n" +
-                                  "2.Exit" + "\n");
+                                  "2.LeapYear" + "\n" +
+                                  "3.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -26,9 +27,12 @@ namespace BasicCorePrograms
                         flipCoin.Flip();
                         break;
                     case 2:
+                        LeapYear leapYear = new LeapYear();
+                        leapYear.Leap();
+                        break;
+                    case 3:
                         flag = false;
                         break;
-
                 }
             }
         }
