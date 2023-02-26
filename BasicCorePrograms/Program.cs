@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
-    public class Flip
+    public class BasicPraograms
     {
         static void Main(string[] args)
         {
@@ -18,7 +18,8 @@ namespace BasicCorePrograms
                 Console.WriteLine("Select the option");
                 Console.WriteLine("1.FlipCoin" + "\n" +
                                   "2.LeapYear" + "\n" +
-                                  "3.Exit" + "\n");
+                                  "3.Power Of 2" + "\n" +
+                                  "4.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -31,8 +32,15 @@ namespace BasicCorePrograms
                         leapYear.Leap();
                         break;
                     case 3:
+                        Powerof2 powerof2 = new Powerof2();
+                        Console.WriteLine("\n" + "Enter the power value Up To 31");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        powerof2.Power(num);
+                        break;
+                    case 4:
                         flag = false;
                         break;
+
                 }
             }
         }
