@@ -22,7 +22,8 @@ namespace BasicCorePrograms
                                   "4.HarmonicSeries" + "\n" +
                                   "5.Factors" + "\n" +
                                   "6. QuotientAndRemainder" + "\n" +
-                                  "7.Exit" + "\n");
+                                  "7.Swap2Numbers" + "\n" +
+                                  "8.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -53,6 +54,10 @@ namespace BasicCorePrograms
                         quotientAndRemainder.FindValue();
                         break;
                     case 7:
+                        Swap2Numbers swap2Numbers = new Swap2Numbers();
+                        swap2Numbers.Swap();
+                        break;
+                    case 8:
                         flag = false;
                         break;
 
