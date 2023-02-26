@@ -21,7 +21,8 @@ namespace BasicCorePrograms
                                   "3.Power Of 2" + "\n" +
                                   "4.HarmonicSeries" + "\n" +
                                   "5.Factors" + "\n" +
-                                  "6.Exit" + "\n");
+                                  "6. QuotientAndRemainder" + "\n" +
+                                  "7.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -48,8 +49,13 @@ namespace BasicCorePrograms
                         factors.Factor();
                         break;
                     case 6:
+                        QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                        quotientAndRemainder.FindValue();
+                        break;
+                    case 7:
                         flag = false;
                         break;
+
                 }
             }
         }
