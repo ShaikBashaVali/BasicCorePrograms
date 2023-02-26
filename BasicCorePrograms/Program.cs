@@ -20,7 +20,8 @@ namespace BasicCorePrograms
                                   "2.LeapYear" + "\n" +
                                   "3.Power Of 2" + "\n" +
                                   "4.HarmonicSeries" + "\n" +
-                                  "5.Exit" + "\n");
+                                  "5.Factors" + "\n" +
+                                  "6.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -43,9 +44,12 @@ namespace BasicCorePrograms
                         harmonicSeries.Harmonic();
                         break;
                     case 5:
+                        Factors factors = new Factors();
+                        factors.Factor();
+                        break;
+                    case 6:
                         flag = false;
                         break;
-
                 }
             }
         }
