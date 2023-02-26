@@ -24,7 +24,8 @@ namespace BasicCorePrograms
                                   "6. QuotientAndRemainder" + "\n" +
                                   "7.Swap2Numbers" + "\n" +
                                   "8.EvenorOdd" + "\n" +
-                                  "9.Exit" + "\n");
+                                  "9.VowelOrConsonant" + "\n" +
+                                  "10.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -63,6 +64,10 @@ namespace BasicCorePrograms
                         evenorOdd.EvenOdd();
                         break;
                     case 9:
+                        VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
+                        vowelOrConsonant.VowelConsonant();
+                        break;
+                    case 10:
                         flag = false;
                         break;
 
