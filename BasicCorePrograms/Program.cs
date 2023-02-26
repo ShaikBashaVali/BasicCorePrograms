@@ -19,7 +19,8 @@ namespace BasicCorePrograms
                 Console.WriteLine("1.FlipCoin" + "\n" +
                                   "2.LeapYear" + "\n" +
                                   "3.Power Of 2" + "\n" +
-                                  "4.Exit" + "\n");
+                                  "4.HarmonicSeries" + "\n" +
+                                  "5.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -38,6 +39,10 @@ namespace BasicCorePrograms
                         powerof2.Power(num);
                         break;
                     case 4:
+                        HarmonicSeries harmonicSeries = new HarmonicSeries();
+                        harmonicSeries.Harmonic();
+                        break;
+                    case 5:
                         flag = false;
                         break;
 
