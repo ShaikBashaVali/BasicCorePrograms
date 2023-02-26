@@ -23,7 +23,8 @@ namespace BasicCorePrograms
                                   "5.Factors" + "\n" +
                                   "6. QuotientAndRemainder" + "\n" +
                                   "7.Swap2Numbers" + "\n" +
-                                  "8.Exit" + "\n");
+                                  "8.EvenorOdd" + "\n" +
+                                  "9.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -58,6 +59,10 @@ namespace BasicCorePrograms
                         swap2Numbers.Swap();
                         break;
                     case 8:
+                        EvenorOdd evenorOdd = new EvenorOdd();
+                        evenorOdd.EvenOdd();
+                        break;
+                    case 9:
                         flag = false;
                         break;
 
